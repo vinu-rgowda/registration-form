@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Registration Form</h1>
+    <form action="#">
+        <div class="form first">
+            <div class="details personal">
+                <span class="title">Personal Details</span>
+            <div class="fields">
+                <div class="input-field" id="entry">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" id="id1" required>
+                </div>
+
+                <div class="input-field" id="entry">
+                    <label>Date of Birth</label>
+                    <input type="text" placeholder="Enter your DOB" id="id2" required>
+                </div>
+
+                <div class="input-field" id="entry">
+                    <label>EMAIL</label>
+                    <input type="text" placeholder="Enter your Email" id="id3" required>
+                </div>
+
+                <div class="input-field" id="entry">
+                    <label>Mobile Number</label>
+                    <input type="text" placeholder="Enter mobile number" id="id4" required>
+                </div>
+
+                <div class="input-field" id="entry">
+                    <label>Gender</label>
+                    <input type="text" placeholder="Enter your gender" id="id5" required>
+                </div>
+
+                <div class="input-field" id="entry">
+                    <label>Occupation</label>
+                    <input type="text" placeholder="Enter your Occupation" id="id6" required>
+                </div>
+            </div>
+            <button class="submit" onclick="getVal()">
+                <span class="subtn">Submit</span>
+                <i class="icon"></i>
+             </button>
+            </div>
+        </div>
+    </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+ body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4070f4;
+ }
+ .container{
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    border-radius: 100PX;
+    margin : 0 15px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+ }
+ .container header{
+    font-size: 30px;
+    position: relative;
+    font-weight: 600;
+    color: #333;
+ } 
+ .container header::before{
+    content:"";
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+ }
+ .container form{
+    min-height: 490px;
+    position: relative;
+    background-color: #f2f2f2;
+    margin-top: 16px;
+ }
+.container form .details{
+    margin-top: 10px;
+    font-weight: 300;
+ }
+.container,.title{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+ }
+.container,.fields{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+form  .fields .input-field{
+    display:flex;
+    width: auto;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.input-field label{
+    font-size:12px;
+    font-weight: 500;
+    color:#2e2e2e;
+}
+.input-field input{
+    height : 42px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #aaa;
+    margin : 8px;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgb(0, 0, 0,0.13);
+}
+.input-field input[type="date"]{
+    color: #707070;
+}
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+.submit{
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    background-color: #2e2e2e;
+    color:#fff;
+    width:20%;
+    height:30px;
+    font-size: large;
+    font-weight: 400;
+    border-radius: 8px;
+    font-style: url(https://fonts.google.com/specimen/Poppins);
+}
+.submit:hover{
+background-color: rgb(30, 105, 180);
+box-shadow: cornflowerblue;
+color:#041a56;
+}
